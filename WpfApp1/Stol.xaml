@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.Stolik"
+        WindowStyle="ToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Stolik" Height="380" Width="800">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="0,0,0,0" x:Name="Pizza" Content="Pizza" Grid.Column="0" Click="Pizza_Click"/>
+            <Button x:Name="Napoje" Content="Napoje"  Grid.Column="1"/>
+            <Button x:Name="Przystawki" Content="Przystawki"  Grid.Column="2"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+            <Button x:Name="Glowne_Menu" Content="Glowne Menu" Grid.Column="0" />
+            <Button x:Name="Gotowe" Content="Rozliczycz sie" Grid.Column="1" />
+            <Button x:Name="Stat" Content="Dokladnie" Grid.Column="2" />
+                </Grid>
+    </StackPanel>
+</Window>
